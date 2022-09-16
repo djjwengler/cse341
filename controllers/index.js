@@ -1,5 +1,5 @@
-const index = (req, res) => {
+const getGrandbaby = (req, res) => {
     res.send('Oliver James Wengler :)');
 }
 
-module.exports = {index}
+module.exports = {getGrandbaby}
