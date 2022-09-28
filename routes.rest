@@ -1,12 +1,41 @@
 // LOCALHOST 
-### 
+### Get all contacts
 GET http://localhost:8080/contacts 
-### 
+
+### Get one contact
 GET http://localhost:8080/contacts/632b21c3bc63158a737c1f0b 
-### 
-GET http://localhost:8080/contacts/632b223cbc63158a737c1f0c 
-### 
-GET http://localhost:8080/contacts/632b2297bc63158a737c1f0d
+
+### Create contact
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Chris",
+    "lastName":"Zundel",
+    "email":"cZundel@gmail.com",
+    "favoriteColor":"red",
+    "birthday":"08/14/1981"
+}
+
+
+### Update contact
+PUT http://localhost:8080/contacts/6334ac0248d2ccdc880a3879 HTTP/1.1
+content-type: application/json
+
+  {
+    "firstName": "Chris",
+    "lastName": "Zundel",
+    "email": "cZundel@gmail.com",
+    "favoriteColor": "red",
+    "birthday": "08/14/1981"
+  }
+
+### DELETE contact
+DELETE http://localhost:8080/contacts/6334ba8cf32735ce47aed7f0 HTTP/1.1
+
+
+
+
 
 // PRODUCTION Deploy 
 ### 
