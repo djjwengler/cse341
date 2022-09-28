@@ -30,19 +30,41 @@ content-type: application/json
     "birthday": "08/14/1981"
   }
 
-### DELETE contact
+### Delete contact
 DELETE http://localhost:8080/contacts/6334ba8cf32735ce47aed7f0 HTTP/1.1
 
 
 
-
-
 // PRODUCTION Deploy 
-### 
+### Get all contacts
 GET https://jw-341-projectone.onrender.com/contacts 
-### 
+
+### Get one contact
 GET https://jw-341-projectone.onrender.com/contacts/632b21c3bc63158a737c1f0b 
-### 
-GET https://jw-341-projectone.onrender.com/contacts/632b223cbc63158a737c1f0c 
-### 
-GET https://jw-341-projectone.onrender.com/contacts/632b2297bc63158a737c1f0d
+
+### Create contact
+POST http://jw-341-projectone.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Chris",
+    "lastName":"Zundel",
+    "email":"cZundel@gmail.com",
+    "favoriteColor":"red",
+    "birthday":"08/14/1981"
+}
+
+### Update contact
+PUT http://jw-341-projectone.onrender.com/contacts/6334ac0248d2ccdc880a3879 HTTP/1.1
+content-type: application/json
+
+  {
+    "firstName": "Chris",
+    "lastName": "Zundel",
+    "email": "cZundel@gmail.com",
+    "favoriteColor": "blue",
+    "birthday": "08/14/1981"
+  }
+
+### Delete contact
+DELETE http://jw-341-projectone.onrender.com/contacts/6334c21b94bf898560fde463 HTTP/1.1
