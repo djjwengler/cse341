@@ -61,7 +61,7 @@ const deleteContact = async (req, res) => {
     .deleteOne({ _id: contactId });
   console.log(deleteContact);
   if (deleteContact.deletedCount > 0) {
-    res.status(204).send();
+    res.status(200).send();
   } else {
     res
       .status(500)
