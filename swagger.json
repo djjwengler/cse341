@@ -5,7 +5,7 @@
     "description": "A list of important contacts",
     "version": "1.0.0"
   },
-  "host": "https://jw-341-projectone.onrender.com/",
+  "host": "jw-341-projectone.onrender.com",
   "basePath": "/",
   "schemes": ["https", "http"],
   "paths": {

@@ -6,8 +6,14 @@ const db = process.env.DB_NAME;
 const app = express();
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
+const cors = require('cors');
+const corsOptions = {
+  origin: '*',
+  credentials: true
+};
 
 app
+  .use(cors(corsOptions))
   .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
   .use(bodyParser.json())
   .use((req, res, next) => {

@@ -19,7 +19,7 @@ content-type: application/json
 
 
 ### Update contact
-PUT http://localhost:8080/contacts/6334ac0248d2ccdc880a3879 HTTP/1.1
+PUT http://localhost:8080/contacts/633de7d2be0f345315a57f2f HTTP/1.1
 content-type: application/json
 
   {
@@ -31,7 +31,7 @@ content-type: application/json
   }
 
 ### Delete contact
-DELETE http://localhost:8080/contacts/6334ba8cf32735ce47aed7f0 HTTP/1.1
+DELETE http://localhost:8080/contacts/633de7d2be0f345315a57f2f HTTP/1.1
 
 
 
@@ -55,7 +55,7 @@ content-type: application/json
 }
 
 ### Update contact
-PUT http://jw-341-projectone.onrender.com/contacts/6335ade5c07afaa3e48ef1f9 HTTP/1.1
+PUT http://jw-341-projectone.onrender.com/contacts/633d90bc09cbbeb1f9a3b66a HTTP/1.1
 content-type: application/json
 
   {
