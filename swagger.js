@@ -5,8 +5,8 @@ const doc = {
     title: "JWengler's Contacts",
     description: 'A list of important contacts'
   },
-  host: 'localhost:8080',
-  schemes: ['http']
+  host: 'jw-341-projectone.onrender.com',
+  schemes: ['https']
 };
 
 const outputFile = './swagger.json';

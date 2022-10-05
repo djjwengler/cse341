@@ -5,7 +5,7 @@
     "description": "A list of important contacts",
     "version": "1.0.0"
   },
-  "host": "jw-341-projectone.onrender.com",
+  "host": "localhost:8080",
   "basePath": "/",
   "schemes": ["https"],
   "paths": {
@@ -24,6 +24,9 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -80,6 +83,9 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
