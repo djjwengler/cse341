@@ -47,24 +47,24 @@ POST http://jw-341-projectone.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Chris",
+    "firstName":"Sam",
     "lastName":"Zundel",
-    "email":"cZundel@gmail.com",
+    "email":"sam@gmail.com",
     "favoriteColor":"red",
-    "birthday":"08/14/1981"
+    "birthday":"09/14/2010"
 }
 
 ### Update contact
-PUT http://jw-341-projectone.onrender.com/contacts/6334ac0248d2ccdc880a3879 HTTP/1.1
+PUT http://jw-341-projectone.onrender.com/contacts/6335ade5c07afaa3e48ef1f9 HTTP/1.1
 content-type: application/json
 
   {
-    "firstName": "Chris",
+    "firstName": "Sam",
     "lastName": "Zundel",
-    "email": "cZundel@gmail.com",
+    "email": "sam@gmail.com",
     "favoriteColor": "blue",
-    "birthday": "08/14/1981"
+    "birthday": "09/14/2010"
   }
 
 ### Delete contact
-DELETE http://jw-341-projectone.onrender.com/contacts/6334c21b94bf898560fde463 HTTP/1.1
+DELETE http://jw-341-projectone.onrender.com/contacts/6335ade5c07afaa3e48ef1f9 HTTP/1.1

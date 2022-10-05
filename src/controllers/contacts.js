@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const getAllContacts = async (req, res) => {
+  // #swagger.description = 'See all contacts'
   const contacts = await mongodb
     .getDatabase()
     .db(process.env.DB_NAME)
@@ -16,6 +17,7 @@ const getAllContacts = async (req, res) => {
 };
 
 const getOneContact = async (req, res) => {
+  // #swagger.description = 'See one contact'
   const contactId = new ObjectId(req.params.id);
   const contact = await mongodb
     .getDatabase()
@@ -29,6 +31,8 @@ const getOneContact = async (req, res) => {
 };
 
 const createContact = async (req, res) => {
+  // #swagger.description = 'Create new contact'
+
   const newContact = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
@@ -53,6 +57,7 @@ const createContact = async (req, res) => {
 };
 
 const deleteContact = async (req, res) => {
+  // #swagger.description = 'Delete contact by ID'
   const contactId = new ObjectId(req.params.id);
   const deleteContact = await mongodb
     .getDatabase()
@@ -73,6 +78,7 @@ const deleteContact = async (req, res) => {
 };
 
 const updateContact = async (req, res) => {
+  // #swagger.description = 'Update contact by ID'
   const contactId = new ObjectId(req.params.id);
   const updateContact = {
     firstName: req.body.firstName,
