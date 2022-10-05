@@ -7,7 +7,7 @@
   },
   "host": "jw-341-projectone.onrender.com",
   "basePath": "/",
-  "schemes": ["https", "http"],
+  "schemes": ["https"],
   "paths": {
     "/api-docs": {
       "get": {

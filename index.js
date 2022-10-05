@@ -8,8 +8,7 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 const cors = require('cors');
 const corsOptions = {
-  origin: '*',
-  credentials: true
+  origin: '*'
 };
 
 app
