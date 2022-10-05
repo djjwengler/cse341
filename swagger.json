@@ -5,9 +5,11 @@
     "description": "A list of important contacts",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "jw-341-projectone.onrender.com",
   "basePath": "/",
-  "schemes": ["https"],
+  "schemes": [
+    "https"
+  ],
   "paths": {
     "/api-docs": {
       "get": {
@@ -19,7 +21,9 @@
     "/contacts/": {
       "get": {
         "description": "See all contacts",
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -71,7 +75,9 @@
     "/contacts/{id}": {
       "get": {
         "description": "See one contact",
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "id",
